@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">TaskApp</string>
+    <string name="upcoming_tasks">Upcoming Tasks</string>
+    <string name="calendar">Calendar</string>
+    <string name="tasks">Tasks</string>
+    <string name="add_task">Add Task</string>
+    <string name="todo">TODO</string>
+    <string name="timer1">TODO</string>
+    <string name="timer2">timer2</string>
+    <string name="countdown_timer">Countdown Timer</string>
+    <string name="_00_00_00">00:00:00</string>
+    <string name="set_time">Set Time</string>
+    <string name="start">Start</string>
+    <string name="reset">Reset</string>
+    <string name="calender1">calender1</string>
+    <string name="calender2">calender2</string>
+    <string name="calender3">calender3</string>
+    <string name="calender4">calender4</string>
+    <string name="tasks_will_appear_here">Tasks will appear here</string>
+    <string name="task_title">Task Title</string>
+    <string name="task_description_goes_here">Task description goes here.</string>
+    <string name="due_date">Due Date</string>
+    <string name="priority">Priority</string>
+    <string name="done">Done</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="task_details">Task Details</string>
+    <string name="task_title1">Task Title</string>
+    <string name="task_description">Task Description</string>
+    <string name="due_date1">Due Date</string>
+    <string name="due_time">Due Time</string>
+    <string name="save">Save</string>
+    <string name="home1">home1</string>
+    <string name="home2">home2</string>
+    <string name="home3">home3</string>
+    <string name="home4">home4</string>
+    <string name="home5">home5</string>
+    <string name="main1">main1</string>
+    <string-array name="priority_options">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+</resources>

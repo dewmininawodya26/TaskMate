@@ -1,0 +1,14 @@
+<!-- res/drawable/rounded_images_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="300dp" /> <!-- Adjust the radius as needed -->
+            <solid android:color="@android:color/transparent" /> <!-- Optional background color -->
+        </shape>
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/images1new"
+            android:gravity="center" />
+    </item>
+</layer-list>

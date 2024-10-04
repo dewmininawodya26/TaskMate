@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Topic Header -->
+    <TextView
+        android:id="@+id/tvTopicHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="@string/task_details"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Task Title Input -->
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTopicHeader"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/task_title1"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+    <!-- Task Description Input -->
+    <EditText
+        android:id="@+id/etTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTaskTitle"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittext_background"
+        android:hint="@string/task_description"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- Due Date TextView -->
+    <TextView
+        android:id="@+id/tvTaskDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTaskDescription"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/textview_background"
+        android:clickable="true"
+        android:hint="@string/due_date1"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Due Time TextView -->
+    <TextView
+        android:id="@+id/tvTaskDueTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTaskDueDate"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textview_background"
+        android:clickable="true"
+        android:hint="@string/due_time"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Priority Spinner -->
+    <Spinner
+        android:id="@+id/spPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTaskDueTime"
+        android:layout_marginTop="24dp"
+        android:entries="@array/priority_options" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spPriority"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="@color/colorSecondary"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="@string/save"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>

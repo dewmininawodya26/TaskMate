@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Task Title -->
+    <TextView
+        android:id="@+id/tvTaskTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/task_title"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cbTaskIsDone"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <!-- Task Description -->
+    <TextView
+        android:id="@+id/tvTaskDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/task_description_goes_here"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTaskTitle"
+        app:layout_constraintEnd_toStartOf="@+id/cbTaskIsDone"
+        app:layout_constraintHorizontal_chainStyle="packed" />
+
+    <!-- Task Due Date -->
+    <TextView
+        android:id="@+id/tvTaskDueDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/due_date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTaskDescription" />
+
+    <!-- Task Priority -->
+    <TextView
+        android:id="@+id/tvTaskPriority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/priority"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTaskDueDate" />
+
+    <!-- Task Done Checkbox -->
+    <CheckBox
+        android:id="@+id/cbTaskIsDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Delete Button -->
+    <ImageButton
+        android:id="@+id/btnDeleteTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/delete_task"
+        android:padding="8dp"
+        android:src="@android:drawable/ic_delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
